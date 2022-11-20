@@ -8,7 +8,8 @@
     "build": "tsc && vite build",
     "lint": "eslint ./src --ext .jsx,.js,.ts,.tsx",
     "preview": "vite preview",
-    "type-check": "tsc"
+    "type-check": "tsc",
+    "prepare": "husky install"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -28,6 +29,7 @@
     "eslint-plugin-react": "^7.31.11",
     "eslint-plugin-simple-import-sort": "^8.0.0",
     "git-commit-msg-linter": "^4.2.1",
+    "husky": "^8.0.2",
     "prettier": "^2.7.1",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
