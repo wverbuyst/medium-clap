@@ -1,7 +1,13 @@
 import './App.css'
 
+import { ClapIcon } from './components/clapIcon'
+
 function App() {
-  return <div className="App">Hello world</div>
+  return (
+    <div>
+      <ClapIcon isClicked={true} />
+    </div>
+  )
 }
 
 export default App
