@@ -4,7 +4,7 @@ import styles from '../styles/index.module.css'
 
 export const ClapContainer: React.FC<{
   children: JSX.Element[]
-  setRef: React.Ref<HTMLButtonElement>
+  setRef: any
   handleClick: () => void
   restProps: unknown
 }> = ({ children, setRef, handleClick, ...restProps }): JSX.Element => {

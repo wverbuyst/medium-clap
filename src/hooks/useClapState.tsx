@@ -18,9 +18,9 @@ interface ResetAction {
   payload?: unknown
 }
 
-type Action = ClapAction | ResetAction
+export type Action = ClapAction | ResetAction
 
-interface ClapState {
+export interface ClapState {
   count: number
   countTotal: number
   isClicked: boolean
@@ -53,10 +53,7 @@ export const useClapState = (
 
   const updateClapState = () => dispatch({ type: 'clap' })
 
-  const getTogglerProps = ({
-    onClick,
-    ...otherProps
-  }: { onClick?: () => void; otherProps?: unknown[] } = {}) => ({
+  const getTogglerProps = ({ onClick, ...otherProps }: any = {}) => ({
     onClick: onClick
       ? callFnsInSequence(updateClapState, onClick)
       : callFnsInSequence(updateClapState),
@@ -64,7 +61,7 @@ export const useClapState = (
     ...otherProps,
   })
 
-  const getCounterProps = ({ ...otherProps }) => ({
+  const getCounterProps = ({ ...otherProps }: any) => ({
     count,
     'aria-valuemax': MAXIMUM_USER_CLAP,
     'aria-valuemin': 0,

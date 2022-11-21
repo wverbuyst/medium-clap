@@ -4,7 +4,7 @@ import styles from '../styles/index.module.css'
 
 export const ClapCount: React.FC<{
   count: number
-  setRef: React.Ref<HTMLElement>
+  setRef: any
   restProps: unknown
 }> = ({ count, setRef, ...restProps }) => {
   return (

@@ -4,8 +4,8 @@ import styles from '../styles/index.module.css'
 
 export const CountTotal: React.FC<{
   countTotal: number
-  setRef: React.Ref<HTMLElement>
-  restProps: unknown
+  setRef: any
+  restProps?: unknown
 }> = ({ countTotal, setRef, ...restProps }) => {
   return (
     <span ref={setRef} className={styles.total} {...restProps}>
