@@ -31,7 +31,7 @@
     "git-commit-msg-linter": "^4.2.1",
     "husky": "^8.0.2",
     "mo-js": "^0.288.2",
-    "prettier": "^2.7.1",
+    "prettier": "^2.8.0",
     "typescript": "^4.6.4",
     "vite": "^3.2.3"
   }
